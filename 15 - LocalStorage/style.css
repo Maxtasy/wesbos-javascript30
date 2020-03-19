@@ -1,6 +1,6 @@
 html {
   box-sizing: border-box;
-  background: url('http://wes.io/hx9M/oh-la-la.jpg') center no-repeat;
+  background: url('bg.jpg') center no-repeat;
   background-size: cover;
   min-height: 100vh;
   display: flex;
@@ -10,7 +10,7 @@ html {
   font-family: Futura,"Trebuchet MS",Arial,sans-serif;
 }
 
-*, *:before, *:after {
+*, *::before, *::after {
   box-sizing: inherit; 
 }
 
@@ -59,17 +59,18 @@ h2 {
   display: none;
 }
 
-.plates input + label:before {
+.plates input + label::before {
   content: '⬜️';
   margin-right: 10px;
 }
 
-.plates input:checked + label:before {
+.plates input:checked + label::before {
   content: '🌮';
 }
 
 .add-items {
   margin-top: 20px;
+  margin-bottom: 20px;;
 }
 
 .add-items input {
